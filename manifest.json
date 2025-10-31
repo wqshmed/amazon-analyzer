@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Profit Analyzer",
+  "version": "1.1",
+  "description": "Shows ASIN, price, rating, and estimated profit below the product title in real time.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.amazon.*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
